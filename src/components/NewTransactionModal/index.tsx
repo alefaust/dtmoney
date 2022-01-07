@@ -23,11 +23,11 @@ export const NewTransactionModal: React.FC<NewTransactionModalProps> = ({isOpen,
     const data = {
       title,
       value,
+      category,
       type,
-      category
     }
 
-    api.post('transactions', data);
+    api.post('/transactions', data);
 
   }
 
