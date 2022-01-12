@@ -6,16 +6,13 @@ import { Container, Content } from './styles';
 interface HeaderProps {
   onOpenNewTransactionModal: () => void;
 }
-export const Header: React.FC<HeaderProps> = ({onOpenNewTransactionModal}) => {
-
-
-  return(
-      <Container>
-        <Content>
-        <img src={logoImg} alt="dt money"/>
-        <button type="button" onClick={onOpenNewTransactionModal} >Nova transação</button>
-       </Content> 
-      </Container>
-  );
-}
-
+export const Header: React.FC<HeaderProps> = ({ onOpenNewTransactionModal }) => (
+  <Container>
+    <Content>
+      <img src={logoImg} alt='dt money' />
+      <button type='button' onClick={onOpenNewTransactionModal}>
+        Nova transação
+      </button>
+    </Content>
+  </Container>
+);

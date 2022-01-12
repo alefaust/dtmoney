@@ -31,7 +31,7 @@ html {
     }
 }
 
-body { 
+body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
 }
@@ -89,4 +89,4 @@ button {
         filter: brightness(0.8);
     }
 }
-`
+`;
